@@ -1,0 +1,107 @@
+Example Output
+
+=== YouTube AI Virality Predictor ===
+Внесете го вашиот YouTube Data API клуч: 'your key to google api'
+
+Изберете опција:
+1. Тренирај нов модел
+2. Вчитај постоечки модел
+3. Предвиди виралност за едно видео
+Внесете избор (1/2/3/4): 1
+
+Тренирање на нов модел...
+Дали сакате да користите сопствени URLs? (y/n): n
+Собирам trending видеа...
+Обработувам: xiFsAjUDwdU
+Обработувам: f3WFSL36oZo
+Обработувам: tGcVu2noaUU
+Обработувам: SJYQNRNzVkI
+Обработувам: sQ5DCwcpMy0
+Обработувам: ekWc5TlNjK4
+Обработувам: q9leDzlNEaY
+Обработувам: gDjaFLxc__k
+Обработувам: EomJuxTeRm4
+Обработувам: WX1kvn9YHVQ
+Обработувам: 5wenj2_oOeg
+Обработувам: iPSP_j-QyX4
+Обработувам: mSVgntFl-1k
+Обработувам: PTKPOCBMo5c
+Обработувам: jcObbfm5_1g
+Обработувам: 43yyNypLixI
+Обработувам: 6XBoo2OfLGg
+Обработувам: H4H99b1CjPU
+Обработувам: eZE4qot1Quk
+Обработувам: uakLypgccbI
+Обработувам: QZfH7cFp3Ys
+Обработувам: md0T03T_0Tg
+Обработувам: tneJeYmw0J4
+Обработувам: tzXmzKQWmTM
+Обработувам: WsK-KPi_w3w
+Обработувам: jsR3XYk_rGY
+Обработувам: pB9jEYO2oaA
+Обработувам: mjzhf0aXXEg
+Обработувам: kWtmIfcWeZo
+Обработувам: RwuITNzKr8g
+Обработувам: 4WMZRXaNReo
+Обработувам: qqLej3URBRM
+Обработувам: Cl9xfQjtbiM
+Обработувам: NBZgirj_C2Y
+Обработувам: aSBa1vJ7Zr4
+Обработувам: NkZgkvDlJuU
+Обработувам: lMeyNE6a_SA
+Обработувам: faL_S-7z4_I
+Обработувам: eB5ZuCWyC6A
+Обработувам: 7hQ8DpeKzZE
+Обработувам: 7D-WpFCmvRA
+Обработувам: n3vgkJj4NrU
+Обработувам: 2rOftxJBa_g
+Обработувам: k26OTjEK6Vw
+Обработувам: Ra9EJu0GtHc
+Обработувам: VExHTj95hIo
+Обработувам: t3s2lAtGncU
+Обработувам: E3lN0tAufX4
+Обработувам: GGuLAZG-ll0
+Обработувам: 0hhR3f_1qGA
+
+Собрани се 50 примероци за тренирање
+Вирални видеа: 20
+Не-вирални видеа: 30
+
+Тренирам модели...
+Random Forest - AUC Score: 1.000
+Gradient Boosting - AUC Score: 1.000
+Logistic Regression - AUC Score: 0.875
+
+Најдобар модел: RandomForestClassifier со AUC: 1.000
+
+Топ 10 најважни features:
+                  feature  importance
+0                   views    0.380382
+2                comments    0.188035
+8       channel_authority    0.092234
+1                   likes    0.056986
+9    channel_productivity    0.046711
+7   comment_to_view_ratio    0.042373
+5         engagement_rate    0.034996
+11     description_length    0.031081
+6      like_to_view_ratio    0.027454
+13               pub_hour    0.023227
+Моделот е зачуван во virality_model.pkl
+Податоците се зачувани во training_data.csv
+
+Внесете YouTube URL (или 'exit' за излез): https://youtu.be/6K3wiD6ACWg?si=jJwfDRbsm2tp3HWS
+
+=== РЕЗУЛТАТ ===
+Наслов: The Daily Routine That Built Marcus Aurelius
+Моментални views: 1,079,225
+Веројатност за виралност: 30.0%
+Предвидување: Обично
+Доверба: Средна
+
+Клучни метрики:
+• Engagement Rate: 2.75%
+• Авторитет на канал: 1.9/10
+• Sentiment: Позитивен
+• Времетраење: 17.1 минути
+
+Внесете YouTube URL (или 'exit' за излез): exit
